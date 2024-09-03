@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.ProductBox
+{
+    grid-column: 2/4;
+    grid-row:1/3;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:max-content;
+}
+
+.TabHeader
+{
+    grid-column:1/4;
+    background-color:goldenrod;
+    border:7px white solid;
+    text-align:center;
+    max-width:90%;
+    justify-self:center;
+    font-family: 'Satisfy', cursive;
+    color:white;
+    font-size:2em;
+    padding:3%;
+    margin-bottom:0;
+}
+
+.Product1 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product1 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+
+
+
+.Product2 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product2 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+.Product3 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product3 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+.Product4 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product4 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+.Product5 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product5 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+.Product6 img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.Product6 h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+
+@media screen and (max-width:600px)
+{
+    body
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+        justify-content:center;
+    }
+    header
+    {
+        grid-template-columns: auto;
+        grid-column: auto;
+    }
+    .GooseGif
+    {
+        display:none;
+    }
+    .GoldenEgg
+    {
+        display:none;
+    }
+    nav
+    {
+        grid-column: auto;
+    }
+    main
+    {
+        grid-template-columns: 1fr;
+        grid-column: auto;
+    }
+    footer
+    {
+        grid-column: auto;
+    }
+    .Ads
+    {
+        grid-template-columns: 1fr;
+        grid-column: auto; 
+        justify-content:center;
+    }
+    .TabHeader
+    {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .ProductBox
+    {
+        display:block;
+        grid-template-columns: 1fr;
+        grid-column: auto;
+        margin-bottom:10%;
+    }
+}

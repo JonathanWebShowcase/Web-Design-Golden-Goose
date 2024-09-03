@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*
+{
+   margin:0;
+   padding:0;
+   border:0; 
+   box-sizing: border-box;
+}
+
+a:visited,a:link
+{
+    text-decoration:none;
+    color:azure;
+}
+nav a:hover
+{
+    color:black;
+}
+nav a:active
+{
+    color:black;
+}
+
+/*Placing all my boxes in the main grid.*/
+
+body
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color:skyblue;
+}
+header
+{
+    grid-column: 1/4;
+}
+
+nav
+{
+    grid-column: 1/4;
+}
+main
+{
+    grid-column:1/4;
+}
+footer
+{
+    grid-column: 1/4;
+}
+
+
+                         /*Header Grid*/
+
+/*Goose Logo 1*/
+header
+{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content:center;
+}
+.GooseGif
+{
+    grid-column:1/2;
+    background-color:goldenrod;
+    border:7px white solid;
+    border-radius: 100px;
+    max-width:80%;
+    max-height:80%;
+    margin:auto auto;
+    overflow:hidden;
+    box-shadow: -0px 10px 10px gray;
+}
+.GooseGif img
+{
+    max-width:90%;
+    object-fit:cover;
+    padding:8%;
+    margin-left: 10%;
+}
+/*Logo Banner*/
+.LogoQuote
+{
+    grid-column:2/3;
+    background-color:goldenrod;
+    border:7px white solid;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    max-height:fit-content;
+    box-shadow: -0px 10px 10px gray;
+}
+.LogoQuote h1
+{
+    color:beige;
+    font-family: 'Satisfy', cursive;
+    color:azure;
+    font-size: 6.5em;
+    text-align:center;
+}
+.LogoQuote h2
+{
+    font-size:2.5em;
+    margin-top:2%;
+    margin-bottom:2%;
+    text-align:center;
+    color:azure;
+}
+/*Logo 2*/
+.GoldenEgg
+{
+    grid-column: 3/4;
+    max-width: 30%;
+    margin:auto auto;
+    rotate: -15deg;
+}
+
+                    /*Nav Section*/
+/*Nav Grid*/
+
+nav ol
+{
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    background-color:goldenrod;
+    border:7px white solid;
+    border-radius: 30px;
+    box-shadow: -0px 10px 10px gray;
+    justify-content:center;
+    margin:1% 1%;;
+    padding:1%;
+}
+nav li
+{
+    padding:5px;
+    margin:auto;
+    list-style: none;
+    border-bottom:3px solid black;
+}
+
+                    /*Main Grid*/
+
+main
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*Visit Us Box*/
+.ScheduleBox
+{
+    grid-column:1/2;
+    background-color:goldenrod;
+    border:7px white solid;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left:2%;
+    margin-bottom:5%;
+}
+.ScheduleBox h1
+{
+    grid-column: 1/3;
+    padding:1%;
+    text-align: center;
+    border-bottom:7px white solid ;
+}
+.ScheduleBox h2
+{
+    grid-column: 1/3;
+    padding:1%;
+    text-align: center;
+    border-bottom:7px white solid ;
+    margin-top:0;
+}
+.ScheduleBox ul
+{
+    text-align: center;
+    grid-column: 1/2;
+    list-style: none;
+    font-size: 1em;
+    border-right:7px white solid;
+    border-bottom:7px white solid ;
+    max-height:100%;
+}
+.ScheduleBox li
+{
+    border-bottom:3.5px white solid;
+    max-height:50%;
+    margin:10%;
+}
+.ScheduleBox img
+{
+    grid-column: 2/3;
+    padding:2%;
+    object-fit:fill;
+    max-width:100%;
+    border-bottom:7px white solid;
+
+
+}
+
+
+
+
+/*Mission Box*/
+.MissionBox
+{
+    grid-column:1/2;
+    background-color:goldenrod;
+    border:7px white solid;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-left:2%;
+    margin-bottom:5%;
+}
+.MissionBox h1
+{
+     border-bottom:7px white solid;
+    text-align:center;
+}
+.MissionBox img
+{
+    padding:2%;
+    margin: auto;
+    margin-top:3%;
+    margin-bottom:3%;
+    max-width: 80%;
+    border:4px white solid;
+}
+.MissionBox p
+{
+    text-align: center;
+    border-top:7px white solid;
+    padding:1%;
+}
+
+
+
+/*Ads*/
+.Ads
+{
+    grid-column: 2/4;
+    grid-row:1/3;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*Dairy*/
+.DairyAd img
+{
+    
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%; 
+    box-shadow: 0px 1px 10px gray;
+}
+.DairyAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    max-height:200%;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Bakery*/
+.BakeryAd img
+{
+
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.BakeryAd h1
+{
+    background-color:goldenrod;
+    border:7px white solid;
+    max-width:70%;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Baking*/
+.BakingAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.BakingAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Drinks*/
+.DrinksAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.DrinksAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Frozen*/
+.FrozenAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.FrozenAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Meat*/
+.MeatAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.MeatAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Produce*/
+.ProduceAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.ProduceAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Snacks*/
+.SnacksAd img
+{
+    width:10%;
+    width: 90%;
+    height:60%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin-top:10%;
+    margin-bottom:0;
+    border-radius:100px;
+    object-fit:cover;
+    margin-left:5%;
+    box-shadow: 0px 1px 10px gray;
+}
+.SnacksAd h1
+{
+    max-width:70%;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    margin: auto;
+    text-align:center;
+    box-shadow: -0px 10px 10px gray;
+}
+/*Footer*/
+footer
+{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 5px solid azure;
+    background-color:goldenrod;
+    max-height: fit-content;
+}
+footer ol
+{
+    display:flex;
+    justify-content:center;
+    list-style: none;
+}
+footer li
+{
+    padding:1%;
+    margin-right:5%;
+}
+@media screen and (max-width:600px)
+{
+    body
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+        justify-content:center;
+    }
+    header
+    {
+        grid-template-columns: auto;
+        grid-column: auto;
+    }
+    .GooseGif
+    {
+        display:none;
+    }
+    .GoldenEgg
+    {
+        display:none;
+    }
+    nav
+    {
+        grid-column: auto;
+    }
+    main
+    {
+        grid-template-columns: 1fr;
+        grid-column: auto;
+    }
+    footer
+    {
+        grid-column: auto;
+    }
+    .Ads
+    {
+        grid-template-columns: 1fr;
+        grid-column: auto; 
+        justify-content:center;
+    }
+}
